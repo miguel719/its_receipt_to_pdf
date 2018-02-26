@@ -94,7 +94,12 @@ var receipt_to_pdf = function(json, output_path, callback) {
 	html_receipt = html_receipt.replace("{{SelloCFD}}", extract_xml_field(json.Timbre.xml, "SelloCFD"));
 	html_receipt = html_receipt.replace("{{SelloSAT}}", extract_xml_field(json.Timbre.xml, "SelloSAT"));
 
-	pdf.create(html_receipt, options).toFile(output_path, function(err, res) {
+	pdf.create(html_receipt, { 
+		format: 'Letter',
+		base: "./",
+		"zoomFactor": "1"
+		"phantomArgs": [], 
+	}).toFile(output_path, function(err, res) {
 	  if (err) {callback(err); return};
 	  callback(undefined, res); // { filename: '/app/businesscard.pdf' }
 	});
