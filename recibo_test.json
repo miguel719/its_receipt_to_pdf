@@ -1,0 +1,139 @@
+{
+	"Version": "3.3",
+	"Serie": "A",
+	"Folio": "23205",
+	"Fecha": "2018-02-23T00:47:08",
+	"FormaPago": "99",
+	"SubTotal": "7500.05",
+	"Descuento": "1234.09",
+	"Moneda": "MXN",
+	"Total": "6265.96",
+	"TipoDeComprobante": "N",
+	"MetodoPago": "PUE",
+	"LugarExpedicion": "09310",
+	"Emisor": {
+		"Rfc": "BAMM870722L89",
+		"Nombre": "Escuela Superior",
+		"RegimenFiscal": "612"
+	},
+	"Receptor": {
+		"Rfc": "MORC880825799",
+		"Nombre": "Rafaeli Camposorio Ruízo",
+		"UsoCFDI": "P01"
+	},
+	"Conceptos": {
+		"Concepto": [{
+			"Concepto": {
+				"ClaveProdServ": "84111505",
+				"Cantidad": "1",
+				"ClaveUnidad": "ACT",
+				"Descripcion": "Pago de nómina",
+				"ValorUnitario": "7500.05",
+				"Descuento": "1234.09",
+				"Importe": "7500.05"
+			}
+		}]
+	},
+	"Complemento": {
+		"Nomina": {
+			"Version": "1.2",
+			"TipoNomina": "O",
+			"FechaPago": "2016-10-31",
+			"FechaInicialPago": "2016-10-16",
+			"FechaFinalPago": "2016-10-31",
+			"NumDiasPagados": "15",
+			"TotalPercepciones": "7500.05",
+			"TotalDeducciones": "1234.09",
+			"TotalOtrosPagos": "0.0",
+			"Emisor": {
+				"Curp": "CABL840215MDFSRS01",
+				"RegistroPatronal": "B5510768108",
+				"RfcPatronOrigen": "GOYA780416GM0"
+			},
+			"Receptor": {
+				"Curp": "AABL840215MDFSRS01",
+				"NumSeguridadSocial": "123456789",
+				"FechaInicioRelLaboral": "2015-10-31",
+				"Antigüedad": "P52W",
+				"TipoContrato": "01",
+				"Sindicalizado": "Sí",
+				"TipoJornada": "01",
+				"TipoRegimen": "02",
+				"NumEmpleado": "120",
+				"Departamento": "Cobranza",
+				"Puesto": "Velador",
+				"RiesgoPuesto": "1",
+				"PeriodicidadPago": "04",
+				"CuentaBancaria": "002680700729988024",
+				"SalarioDiarioIntegrado": "435.50",
+				"ClaveEntFed": "JAL"
+			},
+			"Percepciones": {
+				"TotalSueldos": "7500.05",
+				"TotalGravado": "7500.05",
+				"TotalExento": "0.0",
+				"Percepcion": [
+				{
+					"Percepcion": {
+						"TipoPercepcion": "001",
+						"Clave": "0001",
+						"Concepto": "Sueldos, Salarios Rayas y Jornales",
+						"ImporteGravado": "6250.05",
+						"ImporteExento": "0.0"
+					}
+				},
+				{
+					"Percepcion": {
+						"TipoPercepcion": "049",
+						"Clave": "0049",
+						"Concepto": "Premios de asistencia",
+						"ImporteGravado": "625.00",
+						"ImporteExento": "0.0"
+					}
+				},
+				{
+					"Percepcion": {
+						"TipoPercepcion": "010",
+						"Clave": "0010",
+						"Concepto": "Premios por puntualidad",
+						"ImporteGravado": "625.00",
+						"ImporteExento": "0.0"
+					}
+				}
+				]
+			},
+			"Deducciones": {
+				"TotalOtrasDeducciones": "179.34",
+				"TotalImpuestosRetenidos": "1054.75",
+				"Deduccion": [{
+					"Deduccion": {
+						"TipoDeduccion": "002",
+						"Clave": "0002",
+						"Concepto": "ISR",
+						"Importe": "1054.75"
+					}
+				},
+				{
+					"Deduccion": {
+						"TipoDeduccion": "001",
+						"Clave": "0001",
+						"Concepto": "Seguridad social",
+						"Importe": "179.34"
+					}
+				}]
+			}
+		}
+	},
+	"Timbre": {
+        "taxpayer": "BAMM870722L89",
+        "errors": [],
+        "xml": "<?xml version=\"1.0\" encoding=\"utf-8\"?><cfdi:Comprobante xmlns:cfdi=\"http://www.sat.gob.mx/cfd/3\" xmlns:implocal=\"http://www.sat.gob.mx/implocal\" xmlns:iedu=\"http://www.sat.gob.mx/iedu\" xmlns:tfd=\"http://www.sat.gob.mx/TimbreFiscalDigital\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv33.xsd http://www.sat.gob.mx/implocal http://www.sat.gob.mx/sitio_internet/cfd/implocal/implocal.xsd http://www.sat.gob.mx/iedu http://www.sat.gob.mx/sitio_internet/cfd/iedu/iedu.xsd\" Version=\"3.3\" Serie=\"A\" Folio=\"23205\" Fecha=\"2018-02-23T00:47:05\" FormaPago=\"99\" NoCertificado=\"00001000000400902459\" Certificado=\"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\" SubTotal=\"7500.05\" Descuento=\"1234.09\" Moneda=\"MXN\" Total=\"6265.96\" TipoDeComprobante=\"N\" MetodoPago=\"PUE\" LugarExpedicion=\"09310\" Sello=\"kq0MOeuErauBHW6DC7s/KYz+DCKU3LTocIA5V+WwPGEzOyzh2ITxjHNrFVdCXyGWi3vgKf/0ftcngxsyrbevT2OhpMacY4pMyztUs42Ks5fqQYjXohgjYCPNAQh1SL25RJGCIg+fbmVVc5dilSs8k/8A6uMtmld32VHfSGqymsjKXR3NnEXlflvqj9w2tnEdwKnfZcV7GU+9gZn1kq1F2HaQMRKbEEnX6hD/0oVjT0lFHBjun6DxZm5Dd5bq43EU1I28zQcu3yP//tQvjkTKBKQVbekpQpiamE6dc+VuPh7wnHxUmpzkgHHLCkRfE7JnFw7pQs3nJj3Ou0mNXJSNDA==\"><cfdi:CfdiRelacionados TipoRelacion=\"04\"><cfdi:CfdiRelacionado UUID=\"5FB2822E-396D-4725-8521-CDC4BDD20CCF\"/></cfdi:CfdiRelacionados><cfdi:Emisor Rfc=\"BAMM870722L89\" Nombre=\"Escuela Superior\" RegimenFiscal=\"612\"/><cfdi:Receptor Rfc=\"MORC880825799\" Nombre=\"Rafaeli Camposorio Ruízo\" UsoCFDI=\"P01\"/><cfdi:Conceptos><cfdi:Concepto ClaveProdServ=\"84111505\" Cantidad=\"1\" ClaveUnidad=\"ACT\" Descripcion=\"Pago de nómina\" ValorUnitario=\"7500.05\" Importe=\"7500.05\" Descuento=\"1234.09\"/></cfdi:Conceptos><cfdi:Complemento><nomina12:Nomina xmlns:nomina12=\"http://www.sat.gob.mx/nomina12\" Version=\"1.2\" TipoNomina=\"O\" FechaPago=\"2016-10-31\" FechaInicialPago=\"2016-10-16\" FechaFinalPago=\"2016-10-31\" NumDiasPagados=\"15\" TotalPercepciones=\"7500.05\" TotalDeducciones=\"1234.09\" TotalOtrosPagos=\"0.0\"><nomina12:Emisor Curp=\"CABL840215MDFSRS01\" RegistroPatronal=\"B5510768108\" RfcPatronOrigen=\"GOYA780416GM0\"/><nomina12:Receptor Curp=\"AABL840215MDFSRS01\" NumSeguridadSocial=\"123456789\" FechaInicioRelLaboral=\"2015-10-31\" Antigüedad=\"P52W\" TipoContrato=\"01\" Sindicalizado=\"Sí\" TipoJornada=\"01\" TipoRegimen=\"02\" NumEmpleado=\"120\" Departamento=\"Cobranza\" Puesto=\"Velador\" RiesgoPuesto=\"1\" PeriodicidadPago=\"04\" CuentaBancaria=\"002680700729988024\" SalarioBaseCotApor=\"435.50\" SalarioDiarioIntegrado=\"435.50\" ClaveEntFed=\"JAL\"/><nomina12:Percepciones TotalSueldos=\"7500.05\" TotalGravado=\"7500.05\" TotalExento=\"0.0\"><nomina12:Percepcion TipoPercepcion=\"001\" Clave=\"0001\" Concepto=\"Sueldos, Salarios Rayas y Jornales\" ImporteGravado=\"6250.05\" ImporteExento=\"0.0\"/><nomina12:Percepcion TipoPercepcion=\"049\" Clave=\"0049\" Concepto=\"Premios de asistencia\" ImporteGravado=\"625.00\" ImporteExento=\"0.0\"/><nomina12:Percepcion TipoPercepcion=\"010\" Clave=\"0010\" Concepto=\"Premios por puntualidad\" ImporteGravado=\"625.00\" ImporteExento=\"0.0\"/></nomina12:Percepciones><nomina12:Deducciones TotalOtrasDeducciones=\"179.34\" TotalImpuestosRetenidos=\"1054.75\"><nomina12:Deduccion TipoDeduccion=\"002\" Clave=\"0002\" Concepto=\"ISR\" Importe=\"1054.75\"/><nomina12:Deduccion TipoDeduccion=\"001\" Clave=\"0001\" Concepto=\"Seguridad social\" Importe=\"179.34\"/></nomina12:Deducciones></nomina12:Nomina><tfd:TimbreFiscalDigital xmlns:tfd=\"http://www.sat.gob.mx/TimbreFiscalDigital\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/timbrefiscaldigital/TimbreFiscalDigitalv11.xsd\" Version=\"1.1\" UUID=\"05AE94EC-9EA7-4361-9264-D100E560604A\" FechaTimbrado=\"2018-02-23T15:00:28\" SelloCFD=\"kq0MOeuErauBHW6DC7s/KYz+DCKU3LTocIA5V+WwPGEzOyzh2ITxjHNrFVdCXyGWi3vgKf/0ftcngxsyrbevT2OhpMacY4pMyztUs42Ks5fqQYjXohgjYCPNAQh1SL25RJGCIg+fbmVVc5dilSs8k/8A6uMtmld32VHfSGqymsjKXR3NnEXlflvqj9w2tnEdwKnfZcV7GU+9gZn1kq1F2HaQMRKbEEnX6hD/0oVjT0lFHBjun6DxZm5Dd5bq43EU1I28zQcu3yP//tQvjkTKBKQVbekpQpiamE6dc+VuPh7wnHxUmpzkgHHLCkRfE7JnFw7pQs3nJj3Ou0mNXJSNDA==\" NoCertificadoSAT=\"00001000000407657133\" SelloSAT=\"Vwa+sYJPMZd/E5T87MjmlmnZipIGV2wkJg5Bgl26ngUzd4cSKYA+QU3owEemoUMXN4eZeCPRxKLR3Ck6pPlGzNTsoWEGGOmnDJFgDiCK5Dh7yXNY9MlcAzn/9jRYXqKEFNA5Irq+Uftv/8LH1OAr+4n/I0Xn0kLF96XszfBYnBbog2Bmd6Dy6KoVvZQQNyjCF1Uw5Blwxtx9IWtM1GffHWnDGqdZN5lKeSdRnFSkJTs+mfD2Oq7J/kymdMIH+FzfUvhqvoqJwOc40MhN0R8KLMKrm7+1zdUsY5+1mVCWH3v8RwT9mieD2TUfZIUOGvbvoUsw+gRe5jwK+d60AxWCzw==\" RfcProvCertif=\"GYS1010015I2\"/></cfdi:Complemento></cfdi:Comprobante>",
+        "uuid": "5FB2822E-396D-4725-8521-CDC4BDD20CCF",
+        "warnings": false,
+        "cadenaOriginal": "||3.3|A|23205|2018-02-23T00:47:05|99|00001000000400902459|7500.05|1234.09|MXN|6265.96|N|PUE|09310|04|5FB2822E-396D-4725-8521-CDC4BDD20CCF|BAMM870722L89|Escuela Superior|612|MORC880825799|Rafaeli Camposorio Ruízo|P01|84111505|1|ACT|Pago de nómina|7500.05|7500.05|1234.09|1.2|O|2016-10-31|2016-10-16|2016-10-31|15|7500.05|1234.09|0.0|CABL840215MDFSRS01|B5510768108|GOYA780416GM0|AABL840215MDFSRS01|123456789|2015-10-31|P52W|01|Sí|01|02|120|Cobranza|Velador|1|04|002680700729988024|435.50|435.50|JAL|7500.05|7500.05|0.0|001|0001|Sueldos, Salarios Rayas y Jornales|6250.05|0.0|049|0049|Premios de asistencia|625.00|0.0|010|0010|Premios por puntualidad|625.00|0.0|179.34|1054.75|002|0002|ISR|1054.75|001|0001|Seguridad social|179.34||",
+        "QRString": "?re=BAMM870722L89&rr=MORC880825799&tt=0000006265.960000&id=5FB2822E-396D-4725-8521-CDC4BDD20CCF",
+        "emailError": false,
+        "pdf": false
+    }
+}
+   

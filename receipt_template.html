@@ -1,0 +1,274 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Recibo de Nómina</title>
+    
+    <style>
+
+    .concept_box {
+        width: 49%;
+        border: 1px solid #eee;
+        text-align: left;
+        float: left;
+        margin: 2px;
+    }
+    .concept_row {
+        border-bottom: 1px solid #ddd;
+        font-size: 14px;	
+    }
+    .concept_td_clave {
+    	float: left;
+        width: 15%;
+    }
+    .concept_td_name {
+    	float: left;
+        width: 54%;
+    }
+    .concept_td_amount {
+    	float: left;
+        width: 29%;
+        text-align: right;
+    }
+    .concept_td {
+    	float: left;
+    }
+
+    .sello_box {
+    	max-width: 1000px;
+	    font-size: 10px;
+	    font-family: monospace;
+	    /* white-space: pre; */
+	    word-wrap: break-word;
+	    /* overflow-wrap: break-word; */
+    }
+
+
+    .concept_title {
+    	background: #eee;
+        border-bottom: 1px solid #ddd;
+        font-weight: bold;
+    }
+
+    .invoice-box {
+        max-width: 1000px;
+        margin: auto;
+        margin-top: 50px;
+        padding: 30px;
+        border: 1px solid #eee;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+        font-size: 16px;
+        line-height: 24px;
+        font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+        color: #555;
+    }
+    
+    .invoice-box table {
+        width: 100%;
+        line-height: inherit;
+        text-align: left;
+    }
+    
+    .invoice-box table td {
+        padding: 5px;
+        vertical-align: top;
+    }
+    
+    .invoice-box table tr td:nth-child(2) {
+        text-align: right;
+    }
+    
+    .invoice-box table tr.top table td {
+        padding-bottom: 20px;
+    }
+    
+    .invoice-box table tr.top table td.title {
+        font-size: 45px;
+        line-height: 45px;
+        color: #333;
+    }
+    
+    .invoice-box table tr.information table td {
+        padding-bottom: 40px;
+    }
+    
+    .invoice-box table tr.heading td {
+        background: #eee;
+        border-bottom: 1px solid #ddd;
+        font-weight: bold;
+    }
+    
+    .invoice-box table tr.details td {
+        padding-bottom: 20px;
+    }
+    
+    .invoice-box table tr.item td{
+        border-bottom: 1px solid #eee;
+    }
+    
+    .invoice-box table tr.item.last td {
+        border-bottom: none;
+    }
+    
+    .invoice-box table tr.total td:nth-child(2) {
+        border-top: 2px solid #eee;
+        font-weight: bold;
+    }
+    
+    @media only screen and (max-width: 600px) {
+        .invoice-box table tr.top table td {
+            width: 100%;
+            display: block;
+            text-align: center;
+        }
+        
+        .invoice-box table tr.information table td {
+            width: 100%;
+            display: block;
+            text-align: center;
+        }
+    }
+    
+    /** RTL **/
+    .rtl {
+        direction: rtl;
+        font-family: Tahoma, 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+    }
+    
+    .rtl table {
+        text-align: right;
+    }
+    
+    .rtl table tr td:nth-child(2) {
+        text-align: left;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="invoice-box">
+        <table cellpadding="0" cellspacing="0">
+            <tr class="top">
+                <td colspan="2">
+                    <table>
+                        <tr>
+                            <td class="title">
+                                <img src="{{Logo}}" style="width:150px; height:150px; max-width:200px;">
+                            </td>
+                            
+                            <td>
+                            	No. Empleado: {{NumEmpleado}}<br>
+                                NOMBRE: {{Nombre}}<br>
+                                CURP: {{Curp}}<br>
+                                RFC: {{Rfc}}<br>
+                                Fecha ingreso: {{FechaInicioRelLaboral}}<br>
+                                Antigüedad:{{Antigüedad}} <br>
+                               
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            
+            <tr class="information">
+                <td colspan="2">
+                    <table>
+                        <tr>
+                            <td>
+                                
+                               
+                            </td>
+                            
+                            <td>
+                            	Fecha: {{FechaPago}}<br>
+                                Periodo: {{FechaInicialPago}} al {{FechaFinalPago}}<br>
+                                
+                            	
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            
+            <tr>
+            	<td width="100%">
+	            	<div style="display: table; width: 100%">
+			            <div class="concept_box">
+			            	<div class="concept_title"> Percepciones</div>
+			            	<div class="concept_row" style="font-weight: bold">
+			            		<div class="concept_td_clave">Clave</div>
+			            		<div class="concept_td_name" style="text-align: center">Concepto</div>
+			            		<div class="concept_td_amount">Monto</div>
+			            	</div>
+			            	{{Percepciones}}
+
+			            </div>
+
+			            <div class="concept_box">
+			            	<div class="concept_title"> Deducciones</div>
+
+			            	<div class="concept_row" style="font-weight: bold">
+			            		<div class="concept_td_clave">Clave</div>
+			            		<div class="concept_td_name" style="text-align: center">Concepto</div>
+			            		<div class="concept_td_amount">Monto</div>
+			            	</div>
+			            	{{Deducciones}}
+			            </div>
+		            </div>
+           		</td>
+            </tr>
+
+
+            <tr>
+            	<td width="100%">
+            		<div class="concept_title"> Totales</div>
+
+            		<div class="concept_row">
+            			<div class="concept_td" style="width: 49%">Total percepcciones</div>
+            			<div class="concept_td" style="width: 49%; text-align: right">{{TotalPercepciones}}</div>
+            		</div>
+            		<div class="concept_row">
+            			<div class="concept_td" style="width: 49%">Total Deducciones</div>
+            			<div class="concept_td" style="width: 49%; text-align: right">{{TotalDeducciones}}</div>
+            		</div>
+            		<div class="concept_row">
+            			<div class="concept_td" style="width: 49%">Total </div>
+            			<div class="concept_td" style="width: 49%; text-align: right">{{Total}}</div>
+            		</div>
+            		
+            		</td>
+
+            </tr>
+
+
+            <tr>
+            	<td width="100%">
+            		<div class="sello_box">
+            			UUID: {{uuid}}
+            		</div>
+            		<div class="sello_box">
+            			RFC Emisor:{{RfcEmisor}}
+            		</div>
+            		<!--div class="sello_box">
+            			Sello:{{Sello}}
+            		</div-->
+            		<div class="sello_box">
+            			SelloSAT:{{SelloSAT}}
+            		</div>
+            		<div class="sello_box">
+            			SelloCFD:{{SelloCFD}}
+            		</div
+            		
+            	</td>
+
+            </tr>
+            
+            
+
+
+
+            
+        </table>
+    </div>
+</body>
+</html>
