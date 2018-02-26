@@ -25,6 +25,7 @@ var receipt_to_pdf = function(json, output_path, callback) {
 	var options = { 
 		format: 'Letter',
 		base: "./",
+		"zoomFactor": "1"
 	};
 
 	let html_receipt = html;
