@@ -97,7 +97,7 @@ var receipt_to_pdf = function(json, output_path, callback) {
 	pdf.create(html_receipt, { 
 		format: 'Letter',
 		base: "./",
-		"zoomFactor": "1"
+		"zoomFactor": "1",
 		"phantomArgs": [], 
 	}).toFile(output_path, function(err, res) {
 	  if (err) {callback(err); return};
