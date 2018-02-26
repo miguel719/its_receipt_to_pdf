@@ -24,18 +24,21 @@
     .concept_row {
         border-bottom: 1px solid #ddd;
         font-size: 14px;	
+        height: 42px;
+        margin: 0;
+        position: relative;
     }
     .concept_td_clave {
     	float: left;
-        width: 15%;
+        width: 12%;
     }
     .concept_td_name {
     	float: left;
-        width: 54%;
+        width: 63%;
     }
     .concept_td_amount {
     	float: left;
-        width: 29%;
+        width: 25%;
         text-align: right;
     }
     .concept_td {
@@ -48,6 +51,7 @@
 	    font-family: monospace;
 	    /* white-space: pre; */
 	    word-wrap: break-word;
+        line-height: 120%;
 	    /* overflow-wrap: break-word; */
     }
 
@@ -61,7 +65,7 @@
     .invoice-box {
         width: 1000px;
         margin: auto;
-        margin-top: 50px;
+        margin-top: 20px;
         padding: 30px;
         border: 1px solid #eee;
         box-shadow: 0 0 10px rgba(0, 0, 0, .15);
@@ -69,6 +73,7 @@
         line-height: 24px;
         font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
         color: #555;
+        margin-left: 32px;
     }
     
     .invoice-box table {
@@ -170,7 +175,6 @@
                                 CURP: {{Curp}}<br>
                                 RFC: {{Rfc}}<br>
                                 Fecha ingreso: {{FechaInicioRelLaboral}}<br>
-                                Antigüedad:{{Antigüedad}} <br>
                                
                             </td>
                         </tr>
@@ -221,6 +225,12 @@
 			            		<div class="concept_td_amount">Monto</div>
 			            	</div>
 			            	{{Deducciones}}
+
+                            <!--div class="concept_row">
+                                <div class="concept_td_clave">00006</div>
+                                <div class="concept_td_name">ULTRA LONG WORDEDED NAME CONCEPT THAT BREAKERSAA ALL</div>
+                                <div class="concept_td_amount"> $500000000</div>
+                            </div-->
 			            </div>
 		            </div>
            		</td>

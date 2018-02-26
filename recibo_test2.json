@@ -105,88 +105,22 @@
 			"Deducciones": {
 				"TotalOtrasDeducciones": "179.34",
 				"TotalImpuestosRetenidos": "1054.75",
-				"Deduccion" : [ 
-                        {
-                            "Deduccion" : {
-                                "TipoDeduccion" : "002",
-                                "Clave" : "053",
-                                "Concepto" : "I.S.R.",
-                                "Importe" : "3584.57"
-                            }
-                        }, 
-                        {
-                            "Deduccion" : {
-                                "TipoDeduccion" : "019",
-                                "Clave" : "054",
-                                "Concepto" : "CUOTAS SINDICALES 1%",
-                                "Importe" : "180.80"
-                            }
-                        }, 
-                        {
-                            "Deduccion" : {
-                                "TipoDeduccion" : "004",
-                                "Clave" : "055",
-                                "Concepto" : "SERVICIO MEDICO 3%",
-                                "Importe" : "542.41"
-                            }
-                        }, 
-                        {
-                            "Deduccion" : {
-                                "TipoDeduccion" : "004",
-                                "Clave" : "056",
-                                "Concepto" : "FONDO DE PENSIONES 6.5%",
-                                "Importe" : "1253.86"
-                            }
-                        }, 
-                        {
-                            "Deduccion" : {
-                                "TipoDeduccion" : "004",
-                                "Clave" : "059",
-                                "Concepto" : "SEGURO DEL MAESTRO 0.5%",
-                                "Importe" : "90.40"
-                            }
-                        }, 
-                        {
-                            "Deduccion" : {
-                                "TipoDeduccion" : "004",
-                                "Clave" : "060",
-                                "Concepto" : "FONDO DEL RETIRO 1%",
-                                "Importe" : "180.80"
-                            }
-                        }, 
-                        {
-                            "Deduccion" : {
-                                "TipoDeduccion" : "004",
-                                "Clave" : "065",
-                                "Concepto" : "FONDO DEL AHORRO 2.5%",
-                                "Importe" : "452.01"
-                            }
-                        }, 
-                        {
-                            "Deduccion" : {
-                                "TipoDeduccion" : "004",
-                                "Clave" : "074",
-                                "Concepto" : "PRESTAMO DEL FONDO DE LA VIVIENDA",
-                                "Importe" : "3144.87"
-                            }
-                        }, 
-                        {
-                            "Deduccion" : {
-                                "TipoDeduccion" : "004",
-                                "Clave" : "076",
-                                "Concepto" : "SEGURO DE GASTOS FUNERARIOS",
-                                "Importe" : "45.00"
-                            }
-                        }, 
-                        {
-                            "Deduccion" : {
-                                "TipoDeduccion" : "004",
-                                "Clave" : "089",
-                                "Concepto" : "DGI Gastos Médicos Integral",
-                                "Importe" : "272.28"
-                            }
-                        }
-                    ]
+				"Deduccion": [{
+					"Deduccion": {
+						"TipoDeduccion": "002",
+						"Clave": "0002",
+						"Concepto": "ISR",
+						"Importe": "1054.75"
+					}
+				},
+				{
+					"Deduccion": {
+						"TipoDeduccion": "001",
+						"Clave": "0001",
+						"Concepto": "Seguridad social",
+						"Importe": "179.34"
+					}
+				}]
 			}
 		}
 	},
